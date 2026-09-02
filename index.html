@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BNA Human Rights Documentation Team</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #17202a;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #0000FF;
+            color: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(13, 71, 161, 0.55),
+                    rgba(13, 71, 161, 0.55)
+                ),
+                url("hero.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #c0392b;
+            color: #ffffff;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #e74c3c;
+        }
+
+        /* About */
+        .section {
+            padding: 30px 10%;
+text-align: center
+        }
+#reports {
+    padding: 70px 10%;
+    min-height: 500px;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.20),
+            rgba(0, 0, 0, 0.10)
+        ),
+        url("reports.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #FFFFFF;
+}
+
+#reports h2 {
+    color: #FFFFFF;
+}
+
+#reports p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#contact {
+    padding: 70px 10%;
+    min-height: 300px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+#contact h2 {
+    color: #000000;
+}
+
+#contact p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #666;
+    font-size: 17px;
+}
+        /* Focus */
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px;
+            background: #f1f4f6;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #17202a;
+
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0000FF;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            BNA HRDT
+        </div>
+
+      <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Our Work</a>
+    <a href="reports.html">Reports</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                BNA Human Rights Documentation Team
+            </h1>
+
+            <p>
+                Documenting and preserving credible information
+                concerning human rights violations affecting civilians
+                in Rakhine State and surrounding areas.
+            </p>
+
+            <a href="#about" class="button">
+                Learn More
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="section" id="about">
+
+        <h2>ဤစာမျက်နှာအကြောင်း</h2>
+
+        <p>
+            BNA Human Rights Documentation Team (HRDT)
+            သည် ရခိုင်ပြည်နယ်အတွင်းဖြစ်ပေါ်ခဲ့သော၊ ဖြစ်ပေါ်နေသော လူ့အခွင့်အရေးချိုးဖောက်မှုများကို စောင့်ကြည့်မှတ်တမ်းတင်သည်။.
+        </p>
+
+    </section>
+
+
+    <!-- Our Work -->
+    <section class="section" id="work">
+
+        <h2>အကောင်အထည်ဖော်မှုများ</h2>
+
+        <p>
+            ကျွန်ုပ်တို့၏ လုပ်ငန်းများသည် သက်သေခံထွက်ဆိုချက်များ စုဆောင်းခြင်း၊ သတင်းအချက်အလက်များကို စိစစ်အတည်ပြုခြင်း၊ ဖြစ်စဉ်များကို ခွဲခြမ်းစိတ်ဖြာခြင်းနှင့် လူ့အခွင့်အရေးဆိုင်ရာ သုတေသနလုပ်ငန်းများနှင့် တာဝန်ခံမှုရှိစေရေး ကြိုးပမ်းမှုများအတွက် မှတ်တမ်းအချက်အလက်များကို ထိန်းသိမ်းထားခြင်း တို့ကို အဓိကထား ဆောင်ရွက်ပါသည်။
+        </p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>ထွက်ဆိုချက်များစုဆောင်းခြင်း</h3>
+                <p>
+                    လူ့အခွင့်အရေးချိုးဖောက်ခံရသူများ၏ထွက်ဆိုချက်များကို အစဉ်တစိုက်စုဆောင်းသည်။                </p>
+            </div>
+
+            <div class="card">
+                <h3>အတည်ပြုခြင်း</h3>
+                <p>
+                    ရရှိလာသော သတင်းအချက်အလက်များနှင့် ယုံကြည်စိတ်ချရသောသက်သေများ၏ မှတ်တမ်းများကို အတည်ပြုခြင်းအား ဆောင်ရွက်သည်။
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Analysis</h3>
+                <p>
+                 ဖြစ်စဉ်များနှင့် လူ့အခွင့်အရေးဆိုင်ရာ အခြေအနေများကို ခွဲခြမ်းစိတ်ဖြာခြင်း။
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- Reports -->
+<a href="reports.html" class="reports-link">
+
+    <section class="section" id="reports">
+
+        <h2>Reports</h2>
+
+        <p>
+            Our human rights reports and documentation will be
+            available here.
+        </p>
+
+    </section>
+
+</a>
+
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Email: nyinyimyinthtay@gmail.com
+        </p>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 BNA Human Rights Documentation Team (HRDT)
+        </p>
+
+        <p>
+            Human Rights Documentation and Research
+        </p>
+
+    </footer>
+
+</body>
+</html>
