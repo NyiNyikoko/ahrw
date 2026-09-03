@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Reports - BNA HRDT</title>
+    <title>Reports - Arakha Human Rights Watch</title>
 
     <style>
 
@@ -17,148 +18,355 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f1f4f6;
-            color: #17202a;
+            background: #f4f4f4;
+            color: #333333;
+            line-height: 1.7;
         }
 
+
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
-            background: #0000FF;
-            color: #FFFFFF;
-            padding: 20px 8%;
+            background: #333333;
+            color: #ffffff;
+            padding: 25px 8%;
             text-align: center;
+            border-bottom: 4px solid #c0392b;
         }
 
         header h1 {
             font-size: 30px;
+            margin-bottom: 5px;
         }
 
+        header p {
+            font-size: 15px;
+            color: #dddddd;
+        }
+
+
+        /* =========================
+           REPORTS
+        ========================= */
+
         .reports {
-            padding: 60px 10%;
+            padding: 70px 8%;
             text-align: center;
         }
 
         .reports h2 {
             font-size: 36px;
-            margin-bottom: 40px;
+            margin-bottom: 15px;
+            color: #333333;
         }
 
+        .reports-intro {
+            max-width: 800px;
+            margin: 0 auto 45px;
+            color: #555555;
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           REPORT CONTAINER
+        ========================= */
+
         .report-container {
+            max-width: 1100px;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
             gap: 25px;
             flex-wrap: wrap;
-
         }
 
 
+        /* =========================
+           REPORT BOX
+        ========================= */
+
         .report-box {
-            width: 300px;
-            background: #FFFFFF;
+            width: 310px;
+            min-height: 230px;
+            background: #ffffff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+            border-top: 4px solid #c0392b;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+        }
+
+        .report-box:hover {
+            transform: translateY(-6px);
         }
 
         .report-box h3 {
+            font-size: 21px;
             margin-bottom: 15px;
+            color: #333333;
         }
+
+        .report-box p {
+            color: #555555;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           PDF BUTTON
+        ========================= */
 
         .report-box a {
             display: inline-block;
             margin-top: 15px;
-            padding: 10px 20px;
-            background: #0000FF;
-            color: #FFFFFF;
+            padding: 11px 22px;
+            background: #c0392b;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
 
         .report-box a:hover {
-            background: #000099;
+            background: #e74c3c;
         }
+
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
 
         .back {
             display: inline-block;
-            margin-top: 40px;
-            color: #0000FF;
+            margin-top: 50px;
+            padding: 12px 25px;
+            background: #333333;
+            color: #ffffff;
             text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            background: #555555;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer .slogan {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            .reports {
+                padding: 55px 6%;
+            }
+
+            .reports h2 {
+                font-size: 30px;
+            }
+
+            .report-box {
+                width: 100%;
+                max-width: 350px;
+            }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
 
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
-        <h1>BNA Human Rights Documentation Team</h1>
+
+        <h1>
+            အာရက္ခ လူ့အခွင့်အရေး စောင့်ကြည့်ရေး
+        </h1>
+
+        <p>
+            Arakha Human Rights Watch (AHRW)
+        </p>
+
     </header>
 
 
+
+    <!-- =========================
+         REPORTS
+    ========================= -->
+
     <section class="reports">
 
-        <h2>Reports</h2>
+        <h2>
+            Reports
+        </h2>
+
+        <p class="reports-intro">
+
+            Explore human rights reports, research, and documentation
+            published by Arakha Human Rights Watch (AHRW).
+
+        </p>
 
 
         <div class="report-container">
 
+
+            <!-- REPORT 1 -->
+
             <div class="report-box">
-                <h3>Human Security Report</h3>
 
+                <div>
 
-                <p>
-                    Behind a "Divorced Approved" Letter
+                    <h3>
+                        Human Security Report
+                    </h3>
 
+                    <p>
+                        Behind a "Divorced Approved" Letter
+                    </p>
+
+                </div>
+
+                <a href="behind-a-letter.pdf" target="_blank">
                     View PDF
-                </p>
+                </a>
 
-                <a href="behind-a-letter.pdf" target="_blank">View PDF</a>
-                    
-               
             </div>
 
 
+
+            <!-- REPORT 2 -->
+
             <div class="report-box">
-                <h3>Human Rights Report</h3>
 
-                <p> A test of Cronyism
-                   
-                </p>
+                <div>
 
-               
-              <a href="WBG.pdf" target="_blank">
-            View PDF
-        </a>
-        
-        <p>Private Property Under Warmadness</p>
+                    <h3>
+                        Human Rights Report
+                    </h3>
 
-        <a href="war-madness.pdf" target="_blank">
-            View PDF
-        </a>
-    </div>
+                    <p>
+                        A Test of Cronyism
+                    </p>
+
+                    <a href="WBG.pdf" target="_blank">
+                        View PDF
+                    </a>
+
+                    <p style="margin-top: 20px;">
+                        Private Property Under War Madness
+                    </p>
+
+                    <a href="war-madness.pdf" target="_blank">
+                        View PDF
+                    </a>
+
+                </div>
+
             </div>
 
 
-            <div class="report-box">
-                <h3>Monthly Report</h3>
 
-                <p>
-                    Monthly human rights documentation report.
-                </p>
+            <!-- REPORT 3 -->
+
+            <div class="report-box">
+
+                <div>
+
+                    <h3>
+                        Monthly Report
+                    </h3>
+
+                    <p>
+                        Monthly human rights documentation report.
+                    </p>
+
+                </div>
 
                 <a href="reports/monthly-report.pdf" target="_blank">
                     View PDF
                 </a>
+
             </div>
+
 
         </div>
 
+
+
+        <!-- BACK TO HOME -->
 
         <a class="back" href="index.html">
             ← Back to Home
         </a>
 
+
     </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Arakha Human Rights Watch (AHRW)
+        </p>
+
+        <p>
+            Human Rights Monitoring, Documentation and Research
+        </p>
+
+        <p class="slogan">
+            Document the Truth. Defend Human Rights.
+        </p>
+
+    </footer>
+
 
 </body>
 
