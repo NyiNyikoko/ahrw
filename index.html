@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BNA Human Rights Documentation Team</title>
+    <title>Arakha Human Rights Watch | AHRW</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #17202a;
-            background: #ffffff;
-            line-height: 1.6;
+        html {
+            scroll-behavior: smooth;
         }
 
-        /* Header */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background: #ffffff;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
-            background: #0000FF;
+            background: #333333;
             color: #ffffff;
-            padding: 20px 8%;
+            padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: bold;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 13px;
+            font-weight: normal;
+            margin-top: 2px;
+            color: #dddddd;
         }
 
         nav a {
             color: #ffffff;
             text-decoration: none;
-            margin-left: 25px;
-            font-size: 15px;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: 500;
         }
 
         nav a:hover {
-            color: #f1c40f;
+            color: #e74c3c;
         }
 
-        /* Hero */
+
+        /* =========================
+           HERO
+        ========================= */
+
         .hero {
-            min-height: 500px;
+            min-height: 560px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px;
 
             background:
                 linear-gradient(
-                    rgba(13, 71, 161, 0.55),
-                    rgba(13, 71, 161, 0.55)
+                    rgba(40, 40, 40, 0.30),
+                    rgba(40, 40, 40, 0.40)
                 ),
                 url("hero.jpg");
 
@@ -67,25 +94,39 @@
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
             color: #ffffff;
         }
 
+        .hero .burmese-name {
+            font-size: 23px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
         .hero h1 {
-            font-size: 46px;
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .hero .slogan {
+            font-size: 25px;
+            font-weight: bold;
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         .hero p {
-            font-size: 19px;
+            font-size: 18px;
             margin-bottom: 30px;
+            color: #eeeeee;
         }
 
         .button {
             display: inline-block;
             background: #c0392b;
             color: #ffffff;
-            padding: 13px 25px;
+            padding: 13px 28px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -95,60 +136,186 @@
             background: #e74c3c;
         }
 
-        /* About */
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
         .section {
-            padding: 30px 10%;
-text-align: center
+            padding: 75px 10%;
+            text-align: center;
         }
-#reports {
-    padding: 70px 10%;
-    min-height: 500px;
-    text-align: center;
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.20),
-            rgba(0, 0, 0, 0.10)
-        ),
-        url("reports.jpg");
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
 
-    background-size: cover;
-    background-position: center;
+        .section > p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 17px;
+            color: #555555;
+        }
 
-    color: #FFFFFF;
-}
 
-#reports h2 {
-    color: #FFFFFF;
-}
+        /* =========================
+           ABOUT
+        ========================= */
 
-#reports p {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 20px;
-}
+        #about {
+            background: #ffffff;
+        }
 
-#contact {
-    padding: 70px 10%;
-    min-height: 300px;
-    text-align: center;
-    background: #FFFFFF;
-}
 
-#contact h2 {
-    color: #000000;
-}
+        /* =========================
+           HUMAN RIGHTS MONITOR
+        ========================= */
 
-#contact p {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
-    color: #666;
-    font-size: 17px;
-}
-        /* Focus */
+        #monitor {
+            background: #333333;
+            color: #ffffff;
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        #monitor h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .monitor-intro {
+            max-width: 850px;
+            margin: 0 auto 40px;
+            color: #dddddd;
+            font-size: 16px;
+        }
+
+        .stats-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            width: 195px;
+            min-height: 165px;
+            background: #ffffff;
+            color: #333333;
+            border-radius: 8px;
+            padding: 28px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+            border-top: 4px solid #c0392b;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .stat-number {
+            font-size: 38px;
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .stat-date {
+            font-size: 12px;
+            color: #777777;
+            margin-top: 6px;
+        }
+
+
+        /* =========================
+           DOCUMENTATION METHODOLOGY
+        ========================= */
+
+        #methodology {
+            background: #ffffff;
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        #methodology h2 {
+            font-size: 34px;
+            color: #333333;
+            margin-bottom: 15px;
+        }
+
+        .methodology-intro {
+            max-width: 850px;
+            margin: 0 auto 45px;
+            color: #555555;
+            font-size: 17px;
+        }
+
+        .methodology-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        .methodology-card {
+            width: 190px;
+            min-height: 250px;
+            padding: 30px 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            border-top: 4px solid #333333;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .methodology-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .methodology-number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 12px;
+        }
+
+        .methodology-card h3 {
+            font-size: 20px;
+            color: #333333;
+            margin-bottom: 12px;
+        }
+
+        .methodology-card p {
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           OUR WORK
+        ========================= */
+
+        #work {
+            background: #f4f4f4;
+        }
+
         .cards {
             display: flex;
             gap: 25px;
@@ -160,92 +327,642 @@ text-align: center
         .card {
             width: 280px;
             padding: 30px;
-            background: #f1f4f6;
+            background: #ffffff;
             border-radius: 8px;
             text-align: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #333333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card h3 {
             margin-bottom: 12px;
-            color: #17202a;
-
+            color: #333333;
         }
 
         .card p {
             font-size: 15px;
+            color: #555555;
         }
 
-        /* Footer */
+
+        /* =========================
+           MISSION
+        ========================= */
+
+        #mission {
+            background: #ffffff;
+        }
+
+        .mission-box {
+            max-width: 800px;
+            margin: 35px auto 0;
+            padding: 40px 35px;
+            background: #f4f4f4;
+            border-left: 5px solid #c0392b;
+            border-radius: 8px;
+        }
+
+        .mission-box h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .mission-box p {
+            font-size: 17px;
+            color: #555555;
+        }
+
+
+        /* =========================
+           VISION
+        ========================= */
+
+        #vision {
+            background: #f4f4f4;
+        }
+
+        .vision-box {
+            max-width: 800px;
+            margin: 35px auto 0;
+            padding: 40px 35px;
+            background: #ffffff;
+            border-left: 5px solid #333333;
+            border-radius: 8px;
+        }
+
+        .vision-box h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            color: #333333;
+        }
+
+        .vision-box p {
+            font-size: 17px;
+            color: #555555;
+        }
+
+
+        /* =========================
+           LATEST REPORTS
+        ========================= */
+
+        #latest-reports {
+            background: #333333;
+            color: #ffffff;
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        #latest-reports h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .latest-intro {
+            color: #dddddd;
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+
+        /* =========================
+           SLIDER
+        ========================= */
+
+        .slider {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            padding: 0;
+            text-align: center;
+            color: #333333;
+            background: #ffffff;
+        }
+
+
+        /* =========================
+           FEATURED IMAGE
+        ========================= */
+
+        .slide-image-container {
+            width: 100%;
+            height: 360px;
+            overflow: hidden;
+            position: relative;
+            background: #222222;
+        }
+
+        .slide-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .slide:hover .slide-image {
+            transform: scale(1.03);
+        }
+
+
+        /* Dark overlay */
+
+        .slide-image-container::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 45%;
+            background: linear-gradient(
+                transparent,
+                rgba(0, 0, 0, 0.65)
+            );
+            pointer-events: none;
+        }
+
+
+        /* =========================
+           IMAGE LABEL
+        ========================= */
+
+        .image-label {
+            position: absolute;
+            left: 25px;
+            bottom: 20px;
+            z-index: 2;
+            background: #c0392b;
+            color: #ffffff;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+
+        /* =========================
+           SLIDE CONTENT
+        ========================= */
+
+        .slide-content {
+            padding: 32px 45px 40px;
+        }
+
+        .slide h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .slide-title {
+            font-size: 18px;
+            color: #555555;
+            margin-bottom: 25px;
+        }
+
+        .slide-description {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .slide-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #c0392b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .slide-button:hover {
+            background: #e74c3c;
+        }
+
+
+        /* =========================
+           SLIDER ARROWS
+        ========================= */
+
+        .slider-arrow {
+            position: absolute;
+            top: 180px;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(51, 51, 51, 0.85);
+            color: #ffffff;
+            font-size: 27px;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 0.3s ease;
+        }
+
+        .slider-arrow:hover {
+            background: #c0392b;
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+
+        /* =========================
+           SLIDER DOTS
+        ========================= */
+
+        .slider-dots {
+            margin-top: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            margin: 0 5px;
+            background: #999999;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #c0392b;
+            transform: scale(1.2);
+        }
+
+
+        /* =========================
+           REPORTS
+        ========================= */
+
+        #reports {
+            padding: 80px 10%;
+            background: #ffffff;
+            text-align: center;
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        #reports h2 {
+            color: #333333;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        #reports p {
+            max-width: 850px;
+            margin: auto;
+            color: #555555;
+            font-size: 17px;
+        }
+
+        .reports-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 30px;
+            background: #333333;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .reports-button:hover {
+            background: #555555;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        #contact {
+            padding: 75px 10%;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #333333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            color: #555555;
+            font-size: 17px;
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 10px;
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
-            background: #0000FF;
+            background: #333333;
             color: #ffffff;
             text-align: center;
-            padding: 30px 20px;
+            padding: 35px 20px;
         }
 
         footer p {
-            margin: 5px;
+            margin: 6px;
         }
+
+        footer .slogan-footer {
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 768px) {
 
             header {
                 flex-direction: column;
                 gap: 15px;
+                text-align: center;
+            }
+
+            .logo {
+                font-size: 19px;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2;
             }
 
             nav a {
-                margin: 0 7px;
+                margin: 0 5px;
+                font-size: 13px;
+            }
+
+            .hero {
+                min-height: 520px;
             }
 
             .hero h1 {
                 font-size: 34px;
             }
 
+            .hero .burmese-name {
+                font-size: 19px;
+            }
+
+            .hero .slogan {
+                font-size: 21px;
+            }
+
             .hero p {
                 font-size: 16px;
             }
+
+            .section {
+                padding: 55px 7%;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .mission-box,
+            .vision-box {
+                width: 100%;
+            }
+
+
+            /* Monitor */
+
+            #monitor {
+                padding: 60px 6%;
+            }
+
+            #monitor h2 {
+                font-size: 28px;
+            }
+
+            .stat-card {
+                width: 100%;
+                max-width: 330px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+
+            /* Methodology */
+
+            #methodology {
+                padding: 60px 6%;
+            }
+
+            #methodology h2 {
+                font-size: 28px;
+            }
+
+            .methodology-card {
+                width: 100%;
+                max-width: 340px;
+            }
+
+
+            /* Latest Reports */
+
+            #latest-reports {
+                padding: 60px 5%;
+            }
+
+            #latest-reports h2 {
+                font-size: 28px;
+            }
+
+            .slide-image-container {
+                height: 220px;
+            }
+
+            .slide-content {
+                padding: 28px 30px 35px;
+            }
+
+            .slide h3 {
+                font-size: 23px;
+            }
+
+            .slide-title {
+                font-size: 16px;
+            }
+
+            .slide-description {
+                font-size: 13px;
+            }
+
+            .slider-arrow {
+                top: 110px;
+                width: 36px;
+                height: 36px;
+                font-size: 21px;
+            }
+
+            .prev {
+                left: 8px;
+            }
+
+            .next {
+                right: 8px;
+            }
+
+            .image-label {
+                left: 15px;
+                bottom: 15px;
+                font-size: 10px;
+                padding: 6px 12px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Header -->
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
 
         <div class="logo">
-            BNA HRDT
+
+            အာရက္ခ လူ့အခွင့်အရေး စောင့်ကြည့်ရေး
+
+            <span>
+                Arakha Human Rights Watch (AHRW)
+            </span>
+
         </div>
 
-      <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#work">Our Work</a>
-    <a href="reports.html">Reports</a>
-    <a href="#contact">Contact</a>
-</nav>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#monitor">Monitor</a>
+
+            <a href="#methodology">Methodology</a>
+
+            <a href="#work">Our Work</a>
+
+            <a href="#mission">Mission</a>
+
+            <a href="#vision">Vision</a>
+
+            <a href="#latest-reports">Latest</a>
+
+            <a href="reports.html">Reports</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
 
     </header>
 
 
-    <!-- Hero Section -->
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
     <section class="hero" id="home">
 
         <div class="hero-content">
 
+            <div class="burmese-name">
+
+                အာရက္ခ လူ့အခွင့်အရေး စောင့်ကြည့်ရေး
+
+            </div>
+
+
             <h1>
-                BNA Human Rights Documentation Team
+
+                Arakha Human Rights Watch
+
             </h1>
 
+
+            <div class="slogan">
+
+                Document the Truth. Defend Human Rights.
+
+            </div>
+
+
             <p>
-                Documenting and preserving credible information
-                concerning human rights violations affecting civilians
-                in Rakhine State and surrounding areas.
+
+                AHRW documents, verifies, and preserves credible information
+                concerning human rights violations affecting civilians in
+                Arakha and surrounding areas.
+
             </p>
 
+
             <a href="#about" class="button">
+
                 Learn More
+
             </a>
 
         </div>
@@ -253,98 +970,826 @@ text-align: center
     </section>
 
 
-    <!-- About -->
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
     <section class="section" id="about">
 
-        <h2>ဤစာမျက်နှာအကြောင်း</h2>
+        <h2>
+            About Us
+        </h2>
 
         <p>
-            BNA Human Rights Documentation Team (HRDT)
-            သည် ရခိုင်ပြည်နယ်အတွင်းဖြစ်ပေါ်ခဲ့သော၊ ဖြစ်ပေါ်နေသော လူ့အခွင့်အရေးချိုးဖောက်မှုများကို စောင့်ကြည့်မှတ်တမ်းတင်သည်။.
+
+            Arakha Human Rights Watch (AHRW) is an independent human rights
+            monitoring and documentation initiative focused on documenting
+            and preserving credible information concerning human rights
+            violations affecting civilians in Arakha and surrounding areas.
+
         </p>
 
     </section>
 
 
-    <!-- Our Work -->
-    <section class="section" id="work">
 
-        <h2>အကောင်အထည်ဖော်မှုများ</h2>
+    <!-- =========================
+         HUMAN RIGHTS MONITOR
+    ========================= -->
 
-        <p>
-            ကျွန်ုပ်တို့၏ လုပ်ငန်းများသည် သက်သေခံထွက်ဆိုချက်များ စုဆောင်းခြင်း၊ သတင်းအချက်အလက်များကို စိစစ်အတည်ပြုခြင်း၊ ဖြစ်စဉ်များကို ခွဲခြမ်းစိတ်ဖြာခြင်းနှင့် လူ့အခွင့်အရေးဆိုင်ရာ သုတေသနလုပ်ငန်းများနှင့် တာဝန်ခံမှုရှိစေရေး ကြိုးပမ်းမှုများအတွက် မှတ်တမ်းအချက်အလက်များကို ထိန်းသိမ်းထားခြင်း တို့ကို အဓိကထား ဆောင်ရွက်ပါသည်။
+    <section id="monitor">
+
+        <h2>
+            Human Rights Monitor
+        </h2>
+
+        <p class="monitor-intro">
+
+            Selected documented figures from AHRW monitoring and documentation
+            activities in Arakha.
+
         </p>
 
 
-        <div class="cards">
+        <div class="stats-container">
 
-            <div class="card">
-                <h3>ထွက်ဆိုချက်များစုဆောင်းခြင်း</h3>
-                <p>
-                    လူ့အခွင့်အရေးချိုးဖောက်ခံရသူများ၏ထွက်ဆိုချက်များကို အစဉ်တစိုက်စုဆောင်းသည်။                </p>
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    478
+                </div>
+
+                <div class="stat-label">
+                    Acres of Land Seized
+                </div>
+
+                <div class="stat-date">
+                    2026
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>အတည်ပြုခြင်း</h3>
-                <p>
-                    ရရှိလာသော သတင်းအချက်အလက်များနှင့် ယုံကြည်စိတ်ချရသောသက်သေများ၏ မှတ်တမ်းများကို အတည်ပြုခြင်းအား ဆောင်ရွက်သည်။
-                </p>
+
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    102
+                </div>
+
+                <div class="stat-label">
+                    Arbitrary Arrests
+                </div>
+
+                <div class="stat-date">
+                    Documented Cases
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Analysis</h3>
-                <p>
-                 ဖြစ်စဉ်များနှင့် လူ့အခွင့်အရေးဆိုင်ရာ အခြေအနေများကို ခွဲခြမ်းစိတ်ဖြာခြင်း။
-                </p>
+
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    22
+                </div>
+
+                <div class="stat-label">
+                    Documented Incidents
+                </div>
+
+                <div class="stat-date">
+                    AHRW Documentation
+                </div>
+
             </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    108
+                </div>
+
+                <div class="stat-label">
+                    Civilians Affected
+                </div>
+
+                <div class="stat-date">
+                    Documented
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    10
+                </div>
+
+                <div class="stat-label">
+                    Reports Published
+                </div>
+
+                <div class="stat-date">
+                    AHRW Reports
+                </div>
+
+            </div>
+
 
         </div>
 
     </section>
 
 
-<!-- Reports -->
-<a href="reports.html" class="reports-link">
+
+    <!-- =========================
+         DOCUMENTATION METHODOLOGY
+    ========================= -->
+
+    <section id="methodology">
+
+        <h2>
+            Our Documentation Methodology
+        </h2>
+
+        <p class="methodology-intro">
+
+            AHRW follows a systematic process to collect, verify, and analyze
+            information concerning human rights violations.
+
+        </p>
+
+
+        <div class="methodology-container">
+
+
+            <div class="methodology-card">
+
+                <div class="methodology-number">
+                    01
+                </div>
+
+                <h3>
+                    Testimonies
+                </h3>
+
+                <p>
+
+                    We first collect testimonies and firsthand accounts
+                    from people who have experienced or witnessed
+                    human rights violations.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="methodology-card">
+
+                <div class="methodology-number">
+                    02
+                </div>
+
+                <h3>
+                    Media Monitoring
+                </h3>
+
+                <p>
+
+                    We collect relevant information and reports published
+                    by news media and other reliable sources.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="methodology-card">
+
+                <div class="methodology-number">
+                    03
+                </div>
+
+                <h3>
+                    Official Statements
+                </h3>
+
+                <p>
+
+                    We review and analyze statements and information
+                    released by governments, authorities, and relevant
+                    organizations.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="methodology-card">
+
+                <div class="methodology-number">
+                    04
+                </div>
+
+                <h3>
+                    Cross-Check
+                </h3>
+
+                <p>
+
+                    We cross-check testimonies, media reports, and official
+                    statements to assess consistency and credibility.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="methodology-card">
+
+                <div class="methodology-number">
+                    05
+                </div>
+
+                <h3>
+                    Analysis
+                </h3>
+
+                <p>
+
+                    We analyze verified information to identify incidents,
+                    patterns, trends, and emerging human rights concerns.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         OUR WORK
+    ========================= -->
+
+    <section class="section" id="work">
+
+        <h2>
+            Our Work
+        </h2>
+
+        <p>
+
+            Our work focuses on collecting testimonies, verifying information,
+            analyzing incidents, preserving documentation, and supporting
+            human rights research and accountability efforts.
+
+        </p>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>
+                    Testimony Collection
+                </h3>
+
+                <p>
+
+                    Collecting testimonies and firsthand accounts from people
+                    affected by human rights violations.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Verification
+                </h3>
+
+                <p>
+
+                    Cross-checking information and available evidence to
+                    strengthen the credibility of documented incidents.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>
+                    Analysis
+                </h3>
+
+                <p>
+
+                    Analyzing incidents and human rights developments to
+                    identify patterns, trends, and emerging concerns.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MISSION
+    ========================= -->
+
+    <section class="section" id="mission">
+
+        <h2>
+            Mission
+        </h2>
+
+
+        <div class="mission-box">
+
+            <h3>
+                Our Mission
+            </h3>
+
+            <p>
+
+                To document, verify, and preserve credible information on
+                human rights violations, while supporting efforts toward
+                truth, justice, and accountability.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         VISION
+    ========================= -->
+
+    <section class="section" id="vision">
+
+        <h2>
+            Vision
+        </h2>
+
+
+        <div class="vision-box">
+
+            <h3>
+                Our Vision
+            </h3>
+
+            <p>
+
+                A society where human rights are respected, violations are
+                documented, victims are heard, and perpetrators are held
+                accountable.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LATEST REPORTS SLIDER
+    ========================= -->
+
+    <section id="latest-reports">
+
+        <h2>
+            Latest Reports
+        </h2>
+
+        <p class="latest-intro">
+
+            Explore our latest human rights reports and documentation.
+
+        </p>
+
+
+        <div class="slider">
+
+            <div class="slides" id="slides">
+
+
+                <!-- =========================
+                     SLIDE 1
+                ========================= -->
+
+                <div class="slide">
+
+                    <div class="slide-image-container">
+
+                        <img
+                            src="latest1.jpg"
+                            alt="Behind a Divorced Approved Letter"
+                            class="slide-image">
+
+                        <span class="image-label">
+                            LATEST REPORT
+                        </span>
+
+                    </div>
+
+
+                    <div class="slide-content">
+
+                        <h3>
+                            Human Security Report
+                        </h3>
+
+                        <p class="slide-title">
+                            Behind a "Divorced Approved" Letter
+                        </p>
+
+                        <p class="slide-description">
+
+                            A human security report documenting issues
+                            surrounding an official letter and its impact
+                            on affected civilians.
+
+                        </p>
+
+                        <a
+                            href="behind-a-letter.pdf"
+                            target="_blank"
+                            class="slide-button">
+
+                            Read Report →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SLIDE 2
+                ========================= -->
+
+                <div class="slide">
+
+                    <div class="slide-image-container">
+
+                        <img
+                            src="latest2.jpg"
+                            alt="A Test of Cronyism"
+                            class="slide-image">
+
+                        <span class="image-label">
+                            HUMAN RIGHTS REPORT
+                        </span>
+
+                    </div>
+
+
+                    <div class="slide-content">
+
+                        <h3>
+                            A Test of Cronyism
+                        </h3>
+
+                        <p class="slide-title">
+                            Human Rights Documentation Report
+                        </p>
+
+                        <p class="slide-description">
+
+                            Documentation and analysis concerning
+                            power, privilege, and accountability.
+
+                        </p>
+
+                        <a
+                            href="WBG.pdf"
+                            target="_blank"
+                            class="slide-button">
+
+                            Read Report →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SLIDE 3
+                ========================= -->
+
+                <div class="slide">
+
+                    <div class="slide-image-container">
+
+                        <img
+                            src="latest3.jpg"
+                            alt="Private Property Under War Madness"
+                            class="slide-image">
+
+                        <span class="image-label">
+                            HUMAN RIGHTS REPORT
+                        </span>
+
+                    </div>
+
+
+                    <div class="slide-content">
+
+                        <h3>
+                            Private Property Under War Madness
+                        </h3>
+
+                        <p class="slide-title">
+                            Human Rights Documentation Report
+                        </p>
+
+                        <p class="slide-description">
+
+                            Documentation concerning private property,
+                            land rights, displacement, and the impact
+                            of armed conflict on civilians.
+
+                        </p>
+
+                        <a
+                            href="war-madness.pdf"
+                            target="_blank"
+                            class="slide-button">
+
+                            Read Report →
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 PREVIOUS BUTTON
+            ========================= -->
+
+            <button
+                class="slider-arrow prev"
+                onclick="changeSlide(-1)"
+                aria-label="Previous report">
+
+                ‹
+
+            </button>
+
+
+
+            <!-- =========================
+                 NEXT BUTTON
+            ========================= -->
+
+            <button
+                class="slider-arrow next"
+                onclick="changeSlide(1)"
+                aria-label="Next report">
+
+                ›
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             DOTS
+        ========================= -->
+
+        <div class="slider-dots">
+
+            <span
+                class="dot active"
+                onclick="goToSlide(0)"
+                aria-label="Go to report 1">
+            </span>
+
+            <span
+                class="dot"
+                onclick="goToSlide(1)"
+                aria-label="Go to report 2">
+            </span>
+
+            <span
+                class="dot"
+                onclick="goToSlide(2)"
+                aria-label="Go to report 3">
+            </span>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         REPORTS
+    ========================= -->
 
     <section class="section" id="reports">
 
-        <h2>Reports</h2>
+        <h2>
+            Reports
+        </h2>
 
         <p>
-            Our human rights reports and documentation will be
-            available here.
+
+            Explore our human rights reports, research, and documentation.
+
         </p>
+
+        <a
+            href="reports.html"
+            class="reports-button">
+
+            View All Reports
+
+        </a>
 
     </section>
 
-</a>
 
 
-    <!-- Contact -->
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
     <section class="section" id="contact">
 
-        <h2>Contact</h2>
+        <h2>
+            Contact
+        </h2>
 
         <p>
-            Email: nyinyimyinthtay@gmail.com
+
+            Email:
+
+            <span class="email">
+                arakhahumanrightswatch@gmail.com
+            </span>
+
         </p>
 
     </section>
 
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
 
         <p>
-            © 2026 BNA Human Rights Documentation Team (HRDT)
+            © 2026 Arakha Human Rights Watch (AHRW)
         </p>
 
         <p>
-            Human Rights Documentation and Research
+            Human Rights Monitoring, Documentation and Research
+        </p>
+
+        <p class="slogan-footer">
+            Document the Truth. Defend Human Rights.
         </p>
 
     </footer>
 
+
+
+    <!-- =========================
+         SLIDER JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        let currentSlide = 0;
+
+        const slides = document.getElementById("slides");
+
+        const dots = document.querySelectorAll(".dot");
+
+        const totalSlides = 3;
+
+
+        function showSlide(index) {
+
+            if (index >= totalSlides) {
+
+                currentSlide = 0;
+
+            }
+
+            else if (index < 0) {
+
+                currentSlide = totalSlides - 1;
+
+            }
+
+            else {
+
+                currentSlide = index;
+
+            }
+
+
+            slides.style.transform =
+                "translateX(-" +
+                (currentSlide * 100) +
+                "%)";
+
+
+            dots.forEach(function(dot, i) {
+
+                dot.classList.remove("active");
+
+                if (i === currentSlide) {
+
+                    dot.classList.add("active");
+
+                }
+
+            });
+
+        }
+
+
+        function changeSlide(direction) {
+
+            showSlide(currentSlide + direction);
+
+        }
+
+
+        function goToSlide(index) {
+
+            showSlide(index);
+
+        }
+
+
+        /* =========================
+           AUTO SLIDE
+           Changes every 3 seconds
+        ========================= */
+
+        setInterval(function() {
+
+            showSlide(currentSlide + 1);
+
+        }, 3000);
+
+
+    </script>
+
+
 </body>
+
 </html>
